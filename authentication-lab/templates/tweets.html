@@ -1,0 +1,13 @@
+<!doctype html>
+    <html>
+        <body>
+            <h1> Tweets!</h1>
+            <p> My tweets are: </p>
+            <ul>
+        {% for key in tweets %}
+       <img src="{{tweet}}" alt="" />
+       <li> {{tweets[key]['title']}}</li>
+           {% endfor %}
+            </ul>
+        </body>
+    </html>
